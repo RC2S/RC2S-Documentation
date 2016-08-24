@@ -13,7 +13,7 @@ Un utilisateur avancé pourra, quant à lui, profiter des mêmes fonctionnalité
 lui-même **ses propres plugins** à travers une **API dédiée**.  
 Il pourra ainsi développer de nouveaux contenus qui pourront être intégrés dans la solution RC2S et partagés avec la communauté !
 
-Vous retrouverez tous les détails du projet dans la [documentation complète].
+Vous retrouverez tous les détails du projet dans la [documentation complète](/01%20Documentation/RC2S%20-%20Documentation%20technique).
 
 ## La Solution
 ----------
@@ -31,6 +31,8 @@ Version : **1.0**
 
 - **RC2S Plugin Maker** : Environnement de développement de plugins pour la suite RC2S, intégrant entre autres fonctionnalités un parseur d’annotations pour faciliter et alléger le développement.  
 Les plugins ainsi créés pourront interagir avec le serveur et le client, permettant l’ajout de nouvelles fonctionnalités suivant les besoins de l’utilisateur.
+
+- **Streaming Plugin** : Plugin créé à partir du Plugin Maker permettant la prise en charge des fichiers audio dans la solution RC2S
 
 ## Installation
 ----------
@@ -58,7 +60,7 @@ $ gradle clean publishToMavenLocal install build -PskipServerAutodeploy=true -Ps
 
 - Avec le déploiement automatique sur le serveur d'application Payara :
 
-Suivre la [configuration du serveur Payara] puis
+Suivre la [configuration du serveur Payara](/01%20Documentation/RC2S%20-%20Configuration%20PROD) puis
 ```sh
 $ export RC2S_HOME="/path/to/payara/glassfish/domains/rc2s-payara"
 $ gradle clean publishToMavenLocal install build
@@ -92,5 +94,3 @@ Développé par Mathieu BOISNARD, Valentin FRIES et Vincent MILANO.
    [Gradle 2.14+]: <https://gradle.org/gradle-download/>
    [Payara 162+]: <http://www.payara.fish/downloads>
    [Node.js 6.2+]: <http://nodejs.org>
-   [documentation complète]: <http://github.com/RC2S/RC2S-Documentation/01 Documentation/RC2S - Documentation technique.pdf>
-   [configuration du serveur Payara]: <http://github.comRC2S/RC2S-Documentation/01 Documentation/RC2S - Configuration PROD.pdf>
